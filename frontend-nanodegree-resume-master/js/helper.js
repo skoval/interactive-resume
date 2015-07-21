@@ -75,8 +75,9 @@ The International Name challenge in Lesson 2 where you'll create a function that
 */
 $(document).ready(function() {
   $('button').click(function() {
-    var iName = inName() || function(){};
-    $('#name').html(iName);
+    var oldName = $('#name').html() || ''; 
+    var iName = inName(oldName) || function(){}; 
+    $('#name').html(iName);  
   });
 });
 
@@ -97,9 +98,7 @@ function logClicks(x,y) {
 
 $(document).click(function(loc) {
   // your code goes here!
-  var x = loc.pageX;
-  var y = loc.pageY;
-  logClicks(x, y);
+  logClicks(loc.pageX,loc.pageY);
 });
 
 
@@ -138,7 +137,9 @@ function initializeMap() {
     var locations = [];
 
     // adds the single location property from bio to the locations array
-    locations.push(bio.contacts.location);
+    for (var contact in bio.contacts) {
+      locations.push(bio.contacts[contact].location);
+    }
 
     // iterates through school locations and appends each location to
     // the locations array
@@ -185,7 +186,8 @@ function initializeMap() {
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
       // your code goes here!
-      infoWindow.open(map, marker)
+
+      infoWindow.open(map,marker);
     });
 
     // this is where the pin actually gets added to the map.
@@ -221,9 +223,7 @@ function initializeMap() {
     for (var place in locations) {
 
       // the search request object
-      var request = {
-        query: locations[place]
-      };
+      var request = { query: locations[place] };
 
       // Actually searches the Google Maps API for location data and runs the callback
       // function with the search results after each search.

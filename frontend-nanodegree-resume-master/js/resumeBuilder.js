@@ -5,7 +5,7 @@ var bio = {
 	"contacts" : [{
 		"mobile" : "310-555-5555", 
 		"twitter" : "@the_breaking_point", 
-		"location" : "Santa Monica, California, USA",
+		"location" : "Santa Monica, California",
 		"email" : "skovalch@rand.org",
 		"github" : "skoval"
 	}],	
@@ -19,7 +19,7 @@ var work = {
 		"employer" : "RAND Corporation", 
 		"title" : "Statistician",
 		"dates" : "2013 - 2015",
-		"location" : "1776 Main Street, Santa Monica, California, USA",
+		"location" : "Santa Monica, California",
 		"description" : "Design and Implement Statistical Analyses",
 		"url": "http://www.rand.org/about/people/k/kovalchik_stephanie_ann.html",
 		"images" : "images/rand-logo.png"
@@ -47,7 +47,7 @@ var education = {
 	"schools" : [
 	{
 		"name" : "Caltech",
-		"location" : "	1200 E California Blvd, Pasadena, California",
+		"location" : "Pasadena, California",
 		"degree" : "bachelor", 
 		"majors" : ["biology", "literature"], 
 		"dates" : 2003,
@@ -55,7 +55,7 @@ var education = {
 	},
 	{
 		"name" : "UCLA",
-		"location" : "405 Hilgard Avenue, Los Angeles, California",
+		"location" : "Los Angeles, California",
 		"degree" : "doctorate", 
 		"majors" : ["biostatistics"],
 		"dates" : 2010, 
