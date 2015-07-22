@@ -18,6 +18,10 @@ h6 {
   overflow: auto;
 }
 
+.container-fluid {
+  padding-bottom: 5px;
+}
+
 .education-entry,
 .work-entry,
 .project-entry,

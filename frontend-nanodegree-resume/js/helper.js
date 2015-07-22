@@ -65,14 +65,15 @@ var HTMLonlineSchool = ' -- %data%</a></dt>';
 var HTMLonlineDates = '<dd class="date-text">%data%</dd>';
 
 
-/* location map */
-var internationalizeButton = '<button>Internationalize</button>';
-var googleMap = '<div id="map"></div>';
+/* location map 
+var internationalizeButton = '<button>Internationalize</button>'; */
+/* var googleMap = '<div id="map"></div>'; */
 
 
 /*
 The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
 */
+/*
 $(document).ready(function() {
   $('button').click(function() {
     var oldName = $('#name').html() || ''; 
@@ -80,7 +81,7 @@ $(document).ready(function() {
     $('#name').html(iName);  
   });
 });
-
+*/
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
 */
@@ -108,9 +109,10 @@ This is the fun part. Here's where we generate the custom Google Map for the web
 See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
+/*
 var map;    // declares a global map variable
 
-
+*/
 /*
 Start here! initializeMap() is called when page is loaded.
 */
@@ -119,7 +121,7 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
-    disableDefaultUI: false
+    disableDefaultUI: true
   };
 
   // This next line makes `map` a new Google Map JavaScript Object and attaches it to
