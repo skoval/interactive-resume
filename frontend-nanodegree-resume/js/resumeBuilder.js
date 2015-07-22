@@ -179,4 +179,4 @@ projects.display();
 education.display();
 bio.display();
 
-$("#mapDiv").append(googleMap);
+/* $("#mapDiv").append(googleMap); */
